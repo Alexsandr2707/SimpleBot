@@ -15,7 +15,7 @@ class pooling:
             )
             if  response.status_code == 200:
                 self.incoming_update(json.loads(response.text))
-            else: 
+            else:    
                 print("Error!!!")
 
     def incoming_update(self, update):
