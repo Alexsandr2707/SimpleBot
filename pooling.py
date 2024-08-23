@@ -25,5 +25,7 @@ class pooling:
                     self.offset = message["update_id"] + 1
                     if "message" in message and "text" in message['message']:
                         print(f'Получил сообщение!, id: {message["update_id"]}')
+                        print(f'Получил сообщение!, id: {message["update_id"]}, text: {message["message"]["text"]}')
+
     
 
